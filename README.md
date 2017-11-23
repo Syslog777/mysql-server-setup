@@ -1,2 +1,2 @@
 # mysql-server-setup
-### Usage sh ./mysql-server-setup
+### Usage: ` ./mysql-server-setup`
