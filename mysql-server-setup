@@ -1,19 +1,9 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgradew
 sudo apt-get install mysql-server
 sudo mysql_secure_installation
 mysql -u root -p
-create database testdb;
-create user 'testuser'@'localhost' identified by 'password';
-grant all on testdb.* to 'testuser';
-create database testdb;
-grant all on testdb.* to 'testuser' identified by 'password';
-exit
-mysql -u testuser -p
-use testdb;
-create table customers (customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, first_name TEXT, last_name TEXT);
-exit
 sudo service mysql stop
 sudo dpkg-reconfigure mysql-server
 sudo service mysql start
