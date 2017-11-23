@@ -2,7 +2,7 @@
   Usage: ` ./mysql-server-setup`  
   Original tutorial: https://www.linode.com/docs/databases/mysql/install-mysql-on-ubuntu-14-04  
   Tested on Ubuntu 16.04  
-  Raw code: `
+  Raw code: ```
 #!/bin/bash  
 sudo apt-get update  
 sudo apt-get upgrade  
@@ -14,4 +14,4 @@ sudo dpkg-reconfigure mysql-server
 sudo service mysql start  
 sudo apt-get install mysqltuner  
 mysqltuner  
-`  
+``` 
