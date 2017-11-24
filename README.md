@@ -16,3 +16,13 @@ sudo service mysql start
 sudo apt-get install mysqltuner  
 mysqltuner  
 ``` 
+Usage:. 
+```bash
+#Give the current user executive perms
+chmod u+x ./mysql-server-setup
+
+#run the script
+./mysql-server-setup
+
+#You will have to use have an account password
+```
