@@ -1,5 +1,12 @@
 # mysql-server-setup
-  Usage: ` ./mysql-server-setup`  
+  Usage:
+ ```bash
+#Give perms to the current user to execute script
+chmod u+x ./mysql-server-setup
+
+#Run the script (must have account password)
+./mysql-server-setup
+```  
   Original tutorial: https://www.linode.com/docs/databases/mysql/install-mysql-on-ubuntu-14-04  
   Tested on Ubuntu 16.04  
   Raw code: 
@@ -16,13 +23,3 @@ sudo service mysql start
 sudo apt-get install mysqltuner  
 mysqltuner  
 ``` 
-Usage:. 
-```bash
-#Give the current user executive perms
-chmod u+x ./mysql-server-setup
-
-#run the script
-./mysql-server-setup
-
-#You will have to use have an account password
-```
