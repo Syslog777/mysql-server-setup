@@ -1,11 +1,7 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install mysql-server
-sudo mysql_secure_installation
+sudo apt-get update ; apt-get upgrade ; apt-get install mysql-server mysql_secure_installation
 mysql -u root -p
 sudo service mysql stop
-sudo dpkg-reconfigure mysql-server
-sudo service mysql start
+sudo dpkg-reconfigure mysql-server ; sudo service mysql start
 sudo apt-get install mysqltuner
 mysqltuner
